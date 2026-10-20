@@ -1,6 +1,12 @@
 import "./App.css";
+import { useEffect, useState } from "react";
+
 
 function App() {
+    const [statusApi, setStatusApi] = useState(null);
+    const [eventos, setEventos] = useState([]);
+    const [eventoSelecionado, setEventoSelecionado] = useState(null);
+    const [erro, setErro] = useState("");
 
     return (
         <div className="pagina">
